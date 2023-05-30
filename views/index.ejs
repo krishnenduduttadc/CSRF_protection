@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSRF Example</title>
+</head>
+<body>
+  <h1>CSRF Example</h1>
+  <form action="/submit" method="post">
+    <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
+
